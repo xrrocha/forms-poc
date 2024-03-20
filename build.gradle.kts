@@ -23,6 +23,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:$jsonSerializationVersion")
     implementation("com.charleskorn.kaml:kaml-jvm:$kamlVersion")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.11.0")
+
     implementation("org.slf4j:slf4j-simple:$slf4jVersion")
     implementation("io.github.oshai:kotlin-logging-jvm:$loggingVersion")
 

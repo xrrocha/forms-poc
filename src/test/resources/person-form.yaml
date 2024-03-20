@@ -27,7 +27,7 @@ fields:
     values:
       f: ♀ Female
       m: ♂ Male
-    fyi:  Female (🚺) or male (🚹)
+    fyi: Female (🚺) or male (🚹)
     renderAs: !radioButton
   militaryId: !string
     label: Military id

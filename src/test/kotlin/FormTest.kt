@@ -32,11 +32,11 @@ class FormTest {
                 regex = "\\p{IsLatin}\\.?( (\\.|\\p{IsLatin}))+".toRegex(),
                 validChars = "[ \\p{IsLatin}]".toRegex(),
                 whitespaceHandling = WhitespaceHandling.NORMALIZE,
-                fyi = " An alphabetic, space-separated person name",
+                fyi = "An alphabetic, space-separated person name",
                 errMsg = "Invalid name: must contain only letters and spaces",
             ),
             "gender" to EnumField(
-                label = "Name",
+                label = "Gender",
                 position = 3,
                 fyi = "An alphabetic, space-separated person name",
                 errMsg = "Invalid name: must contain only letters and spaces",
@@ -45,7 +45,7 @@ class FormTest {
                     "m" to "♂ Male",
                 )
             ),
-            "name" to StringField(
+            "militaryId" to StringField(
                 label = "Military Id",
                 position = 4,
                 minLength = 7,
@@ -72,5 +72,16 @@ class FormTest {
             form.toString().normalizeSpace(),
             deserializedForm.toString().normalizeSpace()
         )
+    }
+
+    @Test
+    fun interpretsSwing() {
+        SwingFormInterpreter.interpret(form)
+        Thread.sleep(5000)
+    }
+
+    @Test
+    fun interpretsHtml() {
+        WebFormInterpreter.interpret(form)
     }
 }
