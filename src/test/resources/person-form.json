@@ -1,0 +1,40 @@
+{
+  "title": "Person",
+  "fields": {
+    "id": {
+      "type": "StringField",
+      "label": "Id",
+      "position": 1,
+      "fyi": "8 digits",
+      "errMsg": "Invalid id: must be 8 digits",
+      "help": "ℹ️ Enter _exactly_ 8 digits.\n\nDoncha dare tell us we didn't warn you!",
+      "minLength": 8,
+      "maxLength": 8,
+      "regex": "\\d{8}",
+      "validChars": "\\d"
+    },
+    "name": {
+      "type": "StringField",
+      "label": "Military Id",
+      "position": 4,
+      "fyi": "7 digits",
+      "errMsg": "Invalid military id: must be 7 digits",
+      "help": "ℹ️ Enter _exactly_ 7 digits.\n      \nApplies **only to males**; you've been warned!",
+      "minLength": 7,
+      "maxLength": 7,
+      "regex": "\\d{7}",
+      "validChars": "\\d"
+    },
+    "gender": {
+      "type": "EnumField",
+      "label": "Name",
+      "position": 3,
+      "fyi": "An alphabetic, space-separated person name",
+      "errMsg": "Invalid name: must contain only letters and spaces",
+      "values": {
+        "f": "♀ Female",
+        "m": "♂ Male"
+      }
+    }
+  }
+}
