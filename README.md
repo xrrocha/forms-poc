@@ -6,7 +6,7 @@ application and as a web page.
 
 This POC explores the following subjects:
 
-- A data definition DSL
-- A platform-independent GUI definition DSL (Swing, web)
+- A general-purpose data definition DSL
+- A _platform-independent_ GUI definition DSL
+- Platform-dependent form interpreters (Swing, web)
 - A platform-independent, _translatable_ expression language (Jexl, Javascript)
-- Platform-dependent form interpreters
