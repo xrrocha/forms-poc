@@ -77,7 +77,7 @@ class FormTest {
     @Test
     fun interpretsSwing() {
         SwingFormInterpreter.interpret(form)
-        Thread.sleep(15000)
+        Thread.sleep(45000)
     }
 
     @Test
