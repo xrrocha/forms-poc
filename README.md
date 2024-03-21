@@ -28,5 +28,5 @@ Finally, the type-safe, platform-independent expression language should
 translate expressions to each target platform such that, for instance,
 any suitable JVM expression language (Jexl, JSR-223, etc.) can be used
 for Swing, while Javascript can be generated for web. This is useful to,
-for example, conditionally enabling/disabling form fields or sub- 
-based on potentially complex runtime conditions.
+for example, conditionally enabling/disabling form fields or sub-forms
+depending on potentially complex runtime conditions.
