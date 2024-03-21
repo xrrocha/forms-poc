@@ -77,11 +77,11 @@ class FormTest {
     @Test
     fun interpretsSwing() {
         SwingFormInterpreter.interpret(form)
-        Thread.sleep(5000)
+        Thread.sleep(15000)
     }
 
     @Test
-    fun interpretsHtml() {
+    fun interpretsWeb() {
         WebFormInterpreter.interpret(form)
     }
 }

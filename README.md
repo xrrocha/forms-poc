@@ -30,3 +30,5 @@ any suitable JVM expression language (Jexl, JSR-223, etc.) can be used
 for Swing, while Javascript can be generated for web. This is useful to,
 for example, conditionally enabling/disabling form fields or sub-forms
 depending on potentially complex runtime conditions.
+
+> 👉 The impatient can look at and run tests [intrepretsSwing](https://github.com/xrrocha/forms-poc/blob/af61cfb8c8f4ec8b6288187700d795e78044e16b/src/test/kotlin/FormTest.kt#L77) and [interpretsWeb](https://github.com/xrrocha/forms-poc/blob/af61cfb8c8f4ec8b6288187700d795e78044e16b/src/test/kotlin/FormTest.kt#L83).
