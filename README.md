@@ -1,8 +1,8 @@
 # Forms POC
 
-This project explores the implementation of a forms generator that, given the
-metadata associated with a form, dynamically runs the form both as a Swing
-application and as a web page.
+This project explores the implementation (in Kotlin) of a forms generator that, 
+given the metadata associated with a form, dynamically runs the form both as a
+Swing application and as a web page.
 
 This POC explores the following subjects:
 
